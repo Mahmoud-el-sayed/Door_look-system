@@ -1,0 +1,51 @@
+19:12:21 **** Incremental Build of configuration Debug for project mc1 ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_init':
+../lcd.c:31: error: 'LCD_RS_PORT_ID' undeclared (first use in this function)
+../lcd.c:31: error: (Each undeclared identifier is reported only once
+../lcd.c:31: error: for each function it appears in.)
+../lcd.c:31: error: 'LCD_RS_PIN_ID' undeclared (first use in this function)
+../lcd.c:32: error: 'LCD_RW_PORT_ID' undeclared (first use in this function)
+../lcd.c:32: error: 'LCD_RW_PIN_ID' undeclared (first use in this function)
+../lcd.c:33: error: 'LCD_E_PORT_ID' undeclared (first use in this function)
+../lcd.c:33: error: 'LCD_E_PIN_ID' undeclared (first use in this function)
+../lcd.c:36: error: 'LCD_DATA_PORT_ID' undeclared (first use in this function)
+../lcd.c:38: warning: implicit declaration of function 'LCD_sendCommand'
+../lcd.c:38: error: 'LCD_TWO_LINES_EIGHT_BITS_MODE' undeclared (first use in this function)
+../lcd.c:40: error: 'LCD_CURSOR_OFF' undeclared (first use in this function)
+../lcd.c:42: error: 'LCD_CLEAR_COMMAND' undeclared (first use in this function)
+../lcd.c: At top level:
+../lcd.c:49: warning: conflicting types for 'LCD_sendCommand'
+../lcd.c:38: warning: previous implicit declaration of 'LCD_sendCommand' was here
+../lcd.c: In function 'LCD_sendCommand':
+../lcd.c:51: error: 'LCD_RS_PORT_ID' undeclared (first use in this function)
+../lcd.c:51: error: 'LCD_RS_PIN_ID' undeclared (first use in this function)
+../lcd.c:52: error: 'LCD_RW_PORT_ID' undeclared (first use in this function)
+../lcd.c:52: error: 'LCD_RW_PIN_ID' undeclared (first use in this function)
+../lcd.c:54: error: 'LCD_E_PORT_ID' undeclared (first use in this function)
+../lcd.c:54: error: 'LCD_E_PIN_ID' undeclared (first use in this function)
+../lcd.c:56: error: 'LCD_DATA_PORT_ID' undeclared (first use in this function)
+../lcd.c: In function 'LCD_displayCharacter':
+../lcd.c:68: error: 'LCD_RS_PORT_ID' undeclared (first use in this function)
+../lcd.c:68: error: 'LCD_RS_PIN_ID' undeclared (first use in this function)
+../lcd.c:69: error: 'LCD_RW_PORT_ID' undeclared (first use in this function)
+../lcd.c:69: error: 'LCD_RW_PIN_ID' undeclared (first use in this function)
+../lcd.c:71: error: 'LCD_E_PORT_ID' undeclared (first use in this function)
+../lcd.c:71: error: 'LCD_E_PIN_ID' undeclared (first use in this function)
+../lcd.c:73: error: 'LCD_DATA_PORT_ID' undeclared (first use in this function)
+../lcd.c: In function 'LCD_moveCursor':
+../lcd.c:125: error: 'LCD_SET_CURSOR_LOCATION' undeclared (first use in this function)
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:145: warning: implicit declaration of function 'itoa'
+../lcd.c: In function 'LCD_clearScreen':
+../lcd.c:155: error: 'LCD_CLEAR_COMMAND' undeclared (first use in this function)
+make: *** [lcd.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+19:12:22 Build Failed. 27 errors, 5 warnings. (took 204ms)
+

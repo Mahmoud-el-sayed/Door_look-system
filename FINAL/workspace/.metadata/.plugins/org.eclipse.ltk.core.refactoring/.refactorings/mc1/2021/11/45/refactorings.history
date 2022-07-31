@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mc1/mc1.h&apos; to &apos;password_length.h&apos;" description="Rename resource &apos;mc1.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="mc1.h" name="password_length.h" stamp="1636050237499" updateReferences="true"/>
+</session>
